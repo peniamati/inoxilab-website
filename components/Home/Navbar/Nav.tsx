@@ -25,12 +25,15 @@ const Nav = ({openNav}: Props) => {
         }
     }, [])
   return (
-    <div className={`fixed ${navBg ? 'bg-white shadow-md' : 'fixed'} w-full transition-all duration-200 h-[12vh] z-[1000] `}>
-        <div className='flex items-center justify-between w-[90%] xl:w-[80%] mx-auto'>
+    <div className={`fixed ${navBg ? 'bg-white shadow-md' : 'fixed'} w-full transition-all pt-1 duration-200 h-[12.7vh] z-[1000] `}>
+        <div className='flex items-center justify-evenly w-[90%] xl:w-[80%] mx-auto'>            
             {/* Logo */}
-            <h1 className='text-xl md:text-2xl font-bold'>
-                <span className='text-3xl md:text-4xl text-blue-600'>I</span>noxilab
-            </h1>
+            <div className='flex justify-between items-center'>
+                <img src="/images/logo.jpg" alt="logo" className='w-20 h-20 mr-2'/>
+                <h1 className='text-xl md:text-2xl font-bold'>
+                    <span className='text-3xl md:text-4xl text-blue-600'>I</span>noxilab
+                </h1>
+            </div>
             {/* Links */}
             <div className='hidden lg:flex items-center space-x-10'>
                 {navLinks.map((link) => {
