@@ -4,6 +4,8 @@ import WhyChoose from './WhyChoose/WhyChoose'
 import AnalyticsFeature from './AnalyticsFeature/AnalyticsFeature'
 import Projects from './Projects/Projects'
 import Review from './Review/Review'
+import Contact from './Contact/Contact'
+import { GoogleOAuthProvider } from '@react-oauth/google'
 
 function Home() {
   return (
@@ -13,6 +15,9 @@ function Home() {
       <AnalyticsFeature/>
       <Projects/>
       <Review/>
+      <GoogleOAuthProvider clientId={process.env.CLIENT_ID || ''} >
+      <Contact />
+    </GoogleOAuthProvider>
     </div>
   )
 }

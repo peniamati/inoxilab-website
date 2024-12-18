@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-oauth/google": "^0.12.1",
     "axios": "^1.7.9",
+    "emailjs-com": "^3.2.0",
     "express": "^4.21.2",
+    "googleapis": "^144.0.0",
     "mongoose": "^8.9.1",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "sweetalert2": "^11.15.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
