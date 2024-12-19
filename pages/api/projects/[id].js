@@ -9,10 +9,10 @@ export default async function handler(req, res) {
             const project = await Project.findById(req.query.id);
             res.status(200).json(project);
         } catch (error) {
-            res.status(500).json({ message: 'Error al obtener el proyecto' });
+            res.status(500).json({ message: 'Error al obtener el proyecto', error });
         }
     } else {
-        res.status(405).json({ message: 'Método no permitido' });
+        res.status(405).json({ message: 'Metodo no permitido' });
 
     }
 }

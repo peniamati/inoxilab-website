@@ -10,7 +10,6 @@ const Contact = () => {
     message: '',
   });
   const [isSending, setIsSending] = useState(false);
-  const [status, setStatus] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

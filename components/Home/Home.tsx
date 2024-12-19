@@ -6,7 +6,7 @@ import AnalyticsFeature from './AnalyticsFeature/AnalyticsFeature'
 import Projects from './Projects/Projects'
 import Review from './Review/Review'
 import Contact from './Contact/Contact'
-import AOS, { init } from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Home() {

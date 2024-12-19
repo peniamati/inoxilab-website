@@ -9,9 +9,9 @@ export default async function handler(req, res) {
       const projects = await Project.find({});
       res.status(200).json(projects);
     } catch (error) {
-      res.status(500).json({ message: 'Error al obtener los proyectos' });
+      res.status(500).json({ message: 'Error al obtener los proyectos', error });
     }
   } else {
-    res.status(405).json({ message: 'Método no permitido' });
+    res.status(405).json({ message: 'Metodo no permitido' });
   }
 }
