@@ -22,10 +22,10 @@ const Contact = () => {
     
     // Configuración de EmailJS
     emailjs.send(
-      'inoxilab_website',  // ID del servicio, obténlo de tu cuenta de EmailJS
-      'template_qt2gop7', // ID de la plantilla, obténlo de tu cuenta de EmailJS
+      process.env.SERVICE_ID || '',  // ID del servicio, obténlo de tu cuenta de EmailJS
+      process.env.TEMPLATE_ID || '', // ID de la plantilla, obténlo de tu cuenta de EmailJS
       formData,
-      'Tl1zwtGUNz9mAbOZ3'      // ID de usuario, obténlo de tu cuenta de EmailJS
+      process.env.USER_ID || ''      // ID de usuario, obténlo de tu cuenta de EmailJS
     )
     .then(() => {
       setIsSending(false);
