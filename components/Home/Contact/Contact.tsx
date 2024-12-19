@@ -1,6 +1,4 @@
-'use client'
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
 const Contact = () => {
@@ -16,44 +14,46 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSending(true);
-    
-    // Configuración de EmailJS
-    emailjs.send(
-      process.env.SERVICE_ID || '',  // ID del servicio, obténlo de tu cuenta de EmailJS
-      process.env.TEMPLATE_ID || '', // ID de la plantilla, obténlo de tu cuenta de EmailJS
-      formData,
-      process.env.USER_ID || ''      // ID de usuario, obténlo de tu cuenta de EmailJS
-    )
-    .then(() => {
-      setIsSending(false);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mqakrerw', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error al enviar el formulario');
+      }
+
       Swal.fire({
         title: '¡Mensaje enviado!',
         text: 'Tu mensaje ha sido enviado exitosamente.',
         icon: 'success',
-        confirmButtonText: 'Aceptar'
+        confirmButtonText: 'Aceptar',
       });
-      setFormData({ name: '', email: '', message: '' }); // Limpiar formulario
-    })
-    .catch((error) => {
-      setIsSending(false);
+
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error(error);
       Swal.fire({
         title: 'Error',
         text: 'Hubo un error. Inténtalo nuevamente.',
         icon: 'error',
-        confirmButtonText: 'Aceptar'
+        confirmButtonText: 'Aceptar',
       });
-      console.error('Error al enviar el correo:', error);
-    });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
     <div className="pt-16 pb-16">
       <h1 className="text-3xl font-bold text-center mb-8">Contáctanos</h1>
-      
-      <div className="max-w-4xl mx-auto p-8 rounded-lg shadow- bg-[#fcf6fa]">
+      <div className="max-w-4xl mx-auto p-8 rounded-lg shadow bg-[#fcf6fa]">
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
             <label htmlFor="name" className="block text-lg font-medium mb-2">Nombre</label>
