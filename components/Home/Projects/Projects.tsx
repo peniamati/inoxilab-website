@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
     };
 
     fetchProjects();
-  }, []);
+  }, [projects]);
 
   let count = 0;
   let delay = 0;
