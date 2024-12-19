@@ -27,7 +27,7 @@ const Contact = () => {
       formData,
       'Tl1zwtGUNz9mAbOZ3'      // ID de usuario, obténlo de tu cuenta de EmailJS
     )
-    .then((response) => {
+    .then(() => {
       setIsSending(false);
       Swal.fire({
         title: '¡Mensaje enviado!',
