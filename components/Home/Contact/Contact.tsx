@@ -94,10 +94,6 @@ const Contact = () => {
             />
           </div>
 
-          <div className="text-center mb-4">
-            {status && <p className="text-lg font-semibold">{status}</p>}
-          </div>
-
           <div className="text-center">
             <button
               type="submit"
