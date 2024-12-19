@@ -47,9 +47,9 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center justify-evenly w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
         <div className="flex justify-between items-center">
-          <a href="/">
+          <Link href="/">
             <img src="/images/logo.jpg" alt="logo" className="w-20 h-20 mr-2" />
-          </a>
+          </Link>
           <h1 className="text-xl md:text-2xl font-bold">
             <span className="text-3xl md:text-4xl text-blue-600">I</span>noxilab
           </h1>
