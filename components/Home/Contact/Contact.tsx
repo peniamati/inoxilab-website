@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-16 pb-16">
+    <div className="pt-16 pb-16" id='contact'>
       <h1 className="text-3xl font-bold text-center mb-8">Contáctanos</h1>
       <div className="max-w-4xl mx-auto p-8 rounded-lg shadow bg-[#fcf6fa]">
         <form onSubmit={handleSubmit}>

@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
   let delay = 0;
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8" id="projects">
       <h1 className="text-4xl font-bold text-center mb-8">
         Proyectos realizados
       </h1>
