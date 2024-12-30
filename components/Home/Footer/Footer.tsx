@@ -30,7 +30,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/inoxilab/" target="_blank">
+                <a href="https://web.facebook.com/profile.php?id=61571351310684" target="_blank">
                   <FaFacebook className="inline-block mr-2" />
                   Facebook
                 </a>
