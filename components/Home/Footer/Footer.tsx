@@ -10,8 +10,7 @@ const Footer = () => {
           <div>
             <img src="/images/logo.jpg" alt="logo" className="w-20 h-20 mr-2" />
             <h1 className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-3xl md:text-4xl text-blue-600">I</span>
-              noxilab
+              Inoxilab
             </h1>
             <p className="mt-4 text-sm font-medium text-white leading-[2rem] w-[80%]">
               Soluciones de software a medida para tu empresa o negocio.

@@ -39,9 +39,9 @@ const Review = () => {
           responsive={responsive}
           showDots={true}
         >
-            <ReviewCard name="Nestor" image="/images/c2.png" description="Muy contento con la pagina de Bahia Foton, me ayudo a implementar la web de mi empresa y aumentaron la visibilidad de mi negocio." />
-            <ReviewCard name="Gerardo" image="/images/c2.png" description="Desarrollaron la aplicación para los torneos de Tenis de mesa de ABTM. Me facilitaron el calculo de estadisticas y la realizacion de graficos y le agregaron valor a los torneos presenciales"/>
-            <ReviewCard name="Carlos" image="/images/c2.png" description="Diseñaron un dashboard de Facturación como herramienta para las empresas, que permite ver ventas actualizar stock y demas tareas. Recomendados!"/>
+            <ReviewCard name="Nestor" image="/images/avatar.png" description="Muy contento con la pagina de Bahia Foton, me ayudo a implementar la web de mi empresa y aumentaron la visibilidad de mi negocio." />
+            <ReviewCard name="Gerardo" image="/images/avatar.png" description="Desarrollaron la aplicación para los torneos de Tenis de mesa de ABTM. Me facilitaron el calculo de estadisticas y la realizacion de graficos y le agregaron valor a los torneos presenciales"/>
+            <ReviewCard name="Carlos" image="/images/avatar.png" description="Diseñaron un dashboard de Facturación como herramienta para las empresas, que permite ver ventas actualizar stock y demas tareas. Recomendados!"/>
         </Carousel>
       </div>
     </div>

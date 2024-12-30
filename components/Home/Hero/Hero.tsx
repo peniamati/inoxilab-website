@@ -29,9 +29,9 @@ const Hero = () => {
             </p>
             {/*Button*/}
             <div className="mt-6">
-              <button className="px-3 py-2 md:px-5 md:py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 hover:text-white transition duration-300">
+              <a href="#contact" className="px-3 py-2 md:px-5 md:py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 hover:text-white transition duration-300">
                 Contáctanos
-              </button>
+              </a>
             </div>
           </div>
           {/*Image content*/}

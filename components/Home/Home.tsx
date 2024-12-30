@@ -8,6 +8,7 @@ import Review from './Review/Review'
 import Contact from './Contact/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Whatsapp from './WhatsappButton/Whatsapp'
 
 function Home() {
 
@@ -32,6 +33,7 @@ function Home() {
       <Projects/>
       <Review/>
       <Contact />
+      <Whatsapp/>
     </div>
   )
 }

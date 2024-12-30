@@ -8,10 +8,7 @@ const AnalyticsFeature = () => {
       {/* Define grid */}
       <div className="w-[95%] sm:w-[80%] mx-auto items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Image content */}
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
           <Image
             src="/images/a.jpg"
             alt="image"
@@ -47,9 +44,11 @@ const AnalyticsFeature = () => {
               resultados
             </li>
           </ul>
-          <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-blue-800 transition-all duration-200 hover:text-white">
-            Contáctanos &rarr;
-          </button>
+          <a href="#contact">
+            <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-blue-800 transition-all duration-200 hover:text-white">
+              Contáctanos &rarr;
+            </button>
+          </a>
         </div>
       </div>
     </div>

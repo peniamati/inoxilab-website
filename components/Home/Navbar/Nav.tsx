@@ -51,7 +51,7 @@ const Nav = ({ openNav }: Props) => {
             <img src="/images/logo.jpg" alt="logo" className="w-20 h-20 mr-2" />
           </Link>
           <h1 className="text-xl md:text-2xl font-bold">
-            <span className="text-3xl md:text-4xl text-blue-600">I</span>noxilab
+            Inoxilab
           </h1>
         </div>
         {/* Links */}

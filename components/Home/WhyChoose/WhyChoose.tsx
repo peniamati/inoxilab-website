@@ -19,7 +19,7 @@ const WhyChoose = () => {
           <WhyChooseCard
             image="/images/i2.png"
             title="Soluciones personalizadas"
-            description="Ofrecemos soluciones personalizadas para cada proyecto, adaptándonos a tus necesidades específicas."
+            description="Ofrecemos soluciones personalizadas, centrandonos en lograr cumplir tus objetivos y maximizar el rendimiento."
           />
         </div>
         <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200">
